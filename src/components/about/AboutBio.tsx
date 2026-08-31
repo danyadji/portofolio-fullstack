@@ -12,7 +12,7 @@ export default function AboutBio() {
       <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] text-foreground mb-6">
         <span className="mask-line">
           <span className="mask-line-inner block">
-            Building web apps is more
+            Building web apps is more cc
           </span>
         </span>
         <span className="mask-line">
