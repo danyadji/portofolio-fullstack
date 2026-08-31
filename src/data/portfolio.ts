@@ -156,7 +156,6 @@ export const projects = [
       "Responsive design untuk desktop dan mobile",
     ],
 
-    challenges: "Tantangan utama dalam pengembangan sistem adalah mengolah berbagai data produk menjadi informasi yang mudah dipahami serta mengintegrasikan AI Gemini agar dapat menghasilkan analisis yang relevan berdasarkan data. Solusinya adalah melakukan pengolahan dan penyusunan data terlebih dahulu sebelum dikirim ke Gemini API, kemudian menampilkan hasil analisis dalam format yang terstruktur pada dashboard.",
 
     images: [
       "/assets/projects/C1.png",
@@ -228,12 +227,14 @@ export const projects = [
       "Responsive design untuk desktop dan mobile",
     ],
 
-    challenges: "Membangun rich text editor yang mudah digunakan tapi tetap menghasilkan HTML yang bersih dan aman (bebas XSS). Saya menggunakan TipTap dengan sanitasi konten di sisi server menggunakan Laravel.",
     images: [
-      "/assets/projects/blog.jpg",
+      "/assets/projects/if/1.png",
+      "/assets/projects/if/25.png",
+      "/assets/projects/if/26.png",
+      "/assets/projects/if/27.png",
     ],
 
-    image: "/assets/projects/blog.jpg",
+    image: "/assets/projects/if/1.png",
     tech: ["Wordpres", "Woocomerce", "Midtrans", "Bitship"],
     demo: "#",
     github: "#",
@@ -260,12 +261,14 @@ export const projects = [
       "Responsive design untuk desktop dan mobile",
     ],
 
-    challenges: "Membangun rich text editor yang mudah digunakan tapi tetap menghasilkan HTML yang bersih dan aman (bebas XSS). Saya menggunakan TipTap dengan sanitasi konten di sisi server menggunakan Laravel.",
     images: [
-      "/assets/projects/blog.jpg",
+      "/assets/projects/woodelta/1.png",
+      "/assets/projects/woodelta/28.png",
+      "/assets/projects/woodelta/29.png",
+      "/assets/projects/woodelta/30.png",
     ],
 
-    image: "/assets/projects/blog.jpg",
+    image: "/assets/projects/woodelta/1.png",
     tech: ["Wordpres", "Woocomerce", "Midtrans", "Bitship"],
     demo: "#",
     github: "#",
@@ -293,7 +296,6 @@ export const projects = [
     ],
 
 
-    challenges: "Membangun rich text editor yang mudah digunakan tapi tetap menghasilkan HTML yang bersih dan aman (bebas XSS). Saya menggunakan TipTap dengan sanitasi konten di sisi server menggunakan Laravel.",
     images: [
       "/assets/projects/G1.png",
     ],
