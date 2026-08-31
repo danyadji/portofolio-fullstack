@@ -11,7 +11,7 @@ export default function ContactForm() {
         {/* Posisi */}
         <div className="flex items-center justify-between pb-3 border-b border-border/50">
           <div className="flex items-center gap-3">
-            <Briefcase className="w-4 h-4 text-indigo-500" />
+            <Briefcase className="w-4 h-4 text-foreground" />
             <span className="text-sm text-muted-foreground font-medium">Posisi</span>
           </div>
           <span className="text-sm font-semibold text-foreground text-right">
@@ -22,7 +22,7 @@ export default function ContactForm() {
         {/* Status */}
         <div className="flex items-center justify-between pb-3 border-b border-border/50">
           <div className="flex items-center gap-3">
-            <GraduationCap className="w-4 h-4 text-violet-500" />
+            <GraduationCap className="w-4 h-4 text-foreground" />
             <span className="text-sm text-muted-foreground font-medium">Status</span>
           </div>
           <span className="text-sm font-semibold text-foreground text-right">
@@ -33,7 +33,7 @@ export default function ContactForm() {
         {/* Mulai Bekerja */}
         <div className="flex items-center justify-between pb-3 border-b border-border/50">
           <div className="flex items-center gap-3">
-            <Zap className="w-4 h-4 text-green-500" />
+            <Zap className="w-4 h-4 text-foreground" />
             <span className="text-sm text-muted-foreground font-medium">Ketersediaan</span>
           </div>
           <span className="text-sm font-semibold text-green-600 dark:text-green-400 text-right">
@@ -44,7 +44,7 @@ export default function ContactForm() {
         {/* Penempatan */}
         <div className="flex items-center justify-between pb-3 border-b border-border/50">
           <div className="flex items-center gap-3">
-            <MapPin className="w-4 h-4 text-rose-500" />
+            <MapPin className="w-4 h-4 text-foreground" />
             <span className="text-sm text-muted-foreground font-medium">Penempatan</span>
           </div>
           <span className="text-sm font-semibold text-foreground text-right">
@@ -55,7 +55,7 @@ export default function ContactForm() {
         {/* Lokasi */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Home className="w-4 h-4 text-amber-500" />
+            <Home className="w-4 h-4 text-foreground" />
             <span className="text-sm text-muted-foreground font-medium">Domisili</span>
           </div>
           <span className="text-sm font-semibold text-foreground text-right">

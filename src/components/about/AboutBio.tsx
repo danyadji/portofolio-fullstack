@@ -17,7 +17,7 @@ export default function AboutBio() {
         </span>
         <span className="mask-line">
           <span className="mask-line-inner block">
-            than just writing code —{" "}
+            than just writing code -{" "}
             <span className="text-gradient inline-block">it&apos;s my passion.</span>
           </span>
         </span>
