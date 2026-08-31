@@ -214,7 +214,7 @@ export const projects = [
     // === DETAIL PAGE ===
     role: "Web Developer - mengembangkan dan mengelola website e-commerce menggunakan WordPress, termasuk pengelolaan produk, penyesuaian tampilan, dan optimasi pengalaman pengguna.",
 
-    longDescription: "Project ini merupakan website e-commerce untuk Woodelta yang bergerak di bidang furniture. Website dirancang sebagai media katalog sekaligus platform penjualan online untuk menampilkan berbagai produk furniture. Pengembangan berfokus pada penyusunan katalog produk, tampilan yang responsif, serta alur pengguna yang sederhana agar pelanggan dapat menemukan informasi produk dan melakukan pemesanan dengan mudah.",
+    longDescription: "Project ini merupakan website e-commerce untuk Inspiring Furni yang bergerak di bidang furniture. Website dirancang sebagai media katalog sekaligus platform penjualan online untuk menampilkan berbagai produk furniture. Pengembangan berfokus pada penyusunan katalog produk, tampilan yang responsif, serta alur pengguna yang sederhana agar pelanggan dapat menemukan informasi produk dan melakukan pemesanan dengan mudah.",
 
     features: [
       "Katalog produk furniture",
@@ -282,7 +282,7 @@ export const projects = [
     // === DETAIL PAGE ===
     role: "Web Developer - mengembangkan dan mengelola website e-commerce menggunakan WordPress, termasuk pengelolaan produk, penyesuaian tampilan, dan optimasi pengalaman pengguna.",
 
-    longDescription: "Project ini merupakan website e-commerce untuk Woodelta yang bergerak di bidang furniture. Website dirancang sebagai media katalog sekaligus platform penjualan online untuk menampilkan berbagai produk furniture. Pengembangan berfokus pada penyusunan katalog produk, tampilan yang responsif, serta alur pengguna yang sederhana agar pelanggan dapat menemukan informasi produk dan melakukan pemesanan dengan mudah.",
+    longDescription: "Project ini merupakan website e-commerce untuk Meubel jati Abror yang bergerak di bidang furniture. Website dirancang sebagai media katalog sekaligus platform penjualan online untuk menampilkan berbagai produk furniture. Pengembangan berfokus pada penyusunan katalog produk, tampilan yang responsif, serta alur pengguna yang sederhana agar pelanggan dapat menemukan informasi produk dan melakukan pemesanan dengan mudah.",
 
     features: [
       "Katalog produk furniture",
@@ -314,8 +314,7 @@ export const projects = [
     // === DETAIL PAGE ===
     role: "Web Developer - mengembangkan dan mengelola website e-commerce menggunakan WordPress, termasuk pengelolaan produk, penyesuaian tampilan, dan optimasi pengalaman pengguna.",
 
-    longDescription: "Project ini merupakan website e-commerce untuk Woodelta yang bergerak di bidang furniture. Website dirancang sebagai media katalog sekaligus platform penjualan online untuk menampilkan berbagai produk furniture. Pengembangan berfokus pada penyusunan katalog produk, tampilan yang responsif, serta alur pengguna yang sederhana agar pelanggan dapat menemukan informasi produk dan melakukan pemesanan dengan mudah.",
-
+    longDescription: "Project ini merupakan konsep desain landing page untuk Rosalia Indah yang berfokus pada penyajian informasi layanan perjalanan secara menarik dan mudah dipahami. Desain mencakup informasi destinasi, layanan perjalanan, pilihan bus, serta informasi pemesanan. Pengembangan desain berfokus pada visual yang menarik, struktur informasi yang jelas, dan pengalaman pengguna yang nyaman untuk membantu pengguna mengenal layanan dan melakukan pemesanan perjalanan.",
     features: [
       "Katalog produk furniture",
       "Manajemen produk dan kategori",
@@ -351,8 +350,7 @@ export const projects = [
     // === DETAIL PAGE ===
     role: "Web Developer - mengembangkan dan mengelola website e-commerce menggunakan WordPress, termasuk pengelolaan produk, penyesuaian tampilan, dan optimasi pengalaman pengguna.",
 
-    longDescription: "Project ini merupakan website e-commerce untuk Woodelta yang bergerak di bidang furniture. Website dirancang sebagai media katalog sekaligus platform penjualan online untuk menampilkan berbagai produk furniture. Pengembangan berfokus pada penyusunan katalog produk, tampilan yang responsif, serta alur pengguna yang sederhana agar pelanggan dapat menemukan informasi produk dan melakukan pemesanan dengan mudah.",
-
+    longDescription: "Project ini merupakan desain website untuk Obelix Sea View yang dirancang untuk menampilkan informasi destinasi wisata dan kuliner secara menarik dan mudah dipahami. Website mencakup landing page, informasi mengenai destinasi, serta menu makanan dan minuman. Desain berfokus pada penyajian visual yang menarik, struktur informasi yang jelas, dan pengalaman pengguna yang nyaman untuk membantu pengunjung mengenal destinasi serta layanan yang tersedia.",
     features: [
       "Katalog produk furniture",
       "Manajemen produk dan kategori",
@@ -365,7 +363,6 @@ export const projects = [
     ],
 
 
-    challenges: "Membangun rich text editor yang mudah digunakan tapi tetap menghasilkan HTML yang bersih dan aman (bebas XSS). Saya menggunakan TipTap dengan sanitasi konten di sisi server menggunakan Laravel.",
     images: [
       "/assets/projects/I6.png",
       "/assets/projects/I2.png",
@@ -389,8 +386,7 @@ export const projects = [
     // === DETAIL PAGE ===
     role: "Web Developer - mengembangkan dan mengelola website e-commerce menggunakan WordPress, termasuk pengelolaan produk, penyesuaian tampilan, dan optimasi pengalaman pengguna.",
 
-    longDescription: "Project ini merupakan website e-commerce untuk Woodelta yang bergerak di bidang furniture. Website dirancang sebagai media katalog sekaligus platform penjualan online untuk menampilkan berbagai produk furniture. Pengembangan berfokus pada penyusunan katalog produk, tampilan yang responsif, serta alur pengguna yang sederhana agar pelanggan dapat menemukan informasi produk dan melakukan pemesanan dengan mudah.",
-
+    longDescription: "Project ini merupakan konsep desain website untuk Netory, sebuah layanan jaringan yang dirancang untuk memudahkan pelanggan dalam menemukan dan memilih layanan internet yang sesuai dengan kebutuhan mereka. Website menampilkan berbagai pilihan paket, informasi layanan, serta detail produk secara terstruktur. Desain berfokus pada penyajian informasi yang jelas, visual yang menarik, dan alur pengguna yang sederhana untuk menciptakan pengalaman pelanggan yang nyaman dalam memilih layanan.",
     features: [
       "Katalog produk furniture",
       "Manajemen produk dan kategori",
@@ -403,7 +399,6 @@ export const projects = [
     ],
 
 
-    challenges: "Membangun rich text editor yang mudah digunakan tapi tetap menghasilkan HTML yang bersih dan aman (bebas XSS). Saya menggunakan TipTap dengan sanitasi konten di sisi server menggunakan Laravel.",
     images: [
       "/assets/projects/C1.png",
       "/assets/projects/11.png",
