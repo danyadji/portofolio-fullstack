@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { ExternalLink, GitBranch } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/InstagramIcon";
+import { ensureAbsoluteUrl } from "@/lib/utils";
 
 interface Project {
   id: number;
@@ -10,22 +15,31 @@ interface Project {
   tech: string[];
   demo: string;
   github: string;
+  instagram?: string;
   featured: boolean;
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const hasDemo = project.demo && project.demo !== "#";
+  const hasGithub = project.github && project.github !== "#";
+  const hasInstagram = project.instagram && project.instagram !== "#";
+
+  const handleExternalClick = (e: React.MouseEvent, url: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(ensureAbsoluteUrl(url), "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <Link href={`/project/${project.id}`} className="project-card block group rounded-3xl overflow-hidden bg-card border border-border hover:border-indigo-500/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+    <Link href={`/project/${project.id}`} className="project-card block group rounded-3xl overflow-hidden bg-card border border-border hover:border-foreground/30 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative">
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
         {/* Fallback gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-violet-100 dark:from-indigo-950/50 dark:to-violet-950/50 flex items-center justify-center">
-          <span className="text-4xl font-bold text-indigo-300/50">{project.id}</span>
+        <div className="absolute inset-0 bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center">
+          <span className="text-4xl font-bold text-neutral-400">{project.id}</span>
         </div>
 
-        {/* Wrapper parallax — GSAP menggerakkan div ini, bukan img,
-            agar efek hover (grayscale/scale) tetap jalan.
-            Oversize 8% atas/bawah sebagai bleed agar tak muncul celah */}
+        {/* Parallax Image */}
         <div className="project-media absolute left-0 right-0 -top-[8%] -bottom-[8%] will-change-transform">
           <Image
             src={project.image}
@@ -35,11 +49,52 @@ export default function ProjectCard({ project }: { project: Project }) {
             className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
           />
         </div>
+
+        {/* Quick External Link Badges Overlay */}
+        {(hasDemo || hasInstagram || hasGithub) && (
+          <div className="absolute top-3 right-3 z-10 flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity">
+            {hasDemo && (
+              <button
+                type="button"
+                onClick={(e) => handleExternalClick(e, project.demo)}
+                title="Kunjungi Website / Demo Live"
+                aria-label="Kunjungi Website / Demo Live"
+                className="w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-white hover:text-black transition-all duration-200 cursor-pointer shadow-md"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+              </button>
+            )}
+
+            {hasInstagram && (
+              <button
+                type="button"
+                onClick={(e) => handleExternalClick(e, project.instagram!)}
+                title="Lihat di Instagram"
+                aria-label="Lihat di Instagram"
+                className="w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-gradient-to-r hover:from-pink-500 hover:to-amber-500 transition-all duration-200 cursor-pointer shadow-md"
+              >
+                <InstagramIcon className="w-3.5 h-3.5" />
+              </button>
+            )}
+
+            {hasGithub && (
+              <button
+                type="button"
+                onClick={(e) => handleExternalClick(e, project.github)}
+                title="Source Code GitHub"
+                aria-label="Source Code GitHub"
+                className="w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-white hover:text-black transition-all duration-200 cursor-pointer shadow-md"
+              >
+                <GitBranch className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="font-bold text-base text-foreground mb-1.5 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors duration-300">
+        <h3 className="font-bold text-base text-foreground mb-1.5 group-hover:opacity-80 transition-opacity duration-300">
           {project.title}
         </h3>
         <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2">

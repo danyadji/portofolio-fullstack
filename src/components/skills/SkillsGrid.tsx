@@ -2,10 +2,10 @@ import { skills } from "@/data/portfolio";
 import SkillBadge from "./SkillBadge";
 
 const categories = [
-  { label: "Frontend", data: skills.frontend, color: "text-indigo-500 dark:text-indigo-400" },
-  { label: "Backend", data: skills.backend, color: "text-violet-500 dark:text-violet-400" },
-  { label: "CMS", data: skills.cms, color: "text-cyan-500 dark:text-cyan-400" },
-  { label: "Tools", data: skills.tools, color: "text-orange-500 dark:text-orange-400" },
+  { label: "Frontend", data: skills.frontend, color: "text-foreground" },
+  { label: "Backend", data: skills.backend, color: "text-foreground" },
+  { label: "CMS", data: skills.cms, color: "text-foreground" },
+  { label: "Tools", data: skills.tools, color: "text-foreground" },
 ];
 
 export default function SkillsGrid() {

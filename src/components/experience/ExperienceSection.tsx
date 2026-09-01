@@ -95,14 +95,14 @@ export default function ExperienceSection() {
             {/* Education */}
             <div>
               <div className="flex items-center gap-2.5 mb-6">
-                <div className="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center">
-                  <GraduationCap className="w-4 h-4 text-indigo-500" />
+                <div className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center">
+                  <GraduationCap className="w-4 h-4 text-foreground" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground">Pendidikan</h3>
               </div>
               <div ref={eduRef} className="space-y-4">
                 {education.map((edu) => (
-                  <div key={edu.id} className="edu-card p-5 rounded-2xl bg-card border border-border hover:border-indigo-500/30 transition-colors duration-300">
+                  <div key={edu.id} className="edu-card p-5 rounded-2xl bg-card border border-border hover:border-foreground/30 transition-colors duration-300">
                     <div className="flex items-start justify-between gap-4 mb-2">
                       <div>
                         <p className="font-bold text-foreground">{edu.degree}</p>
@@ -113,7 +113,7 @@ export default function ExperienceSection() {
                           {edu.period}
                         </span>
                         {edu.gpa && (
-                          <p className="text-xs text-indigo-500 font-semibold mt-1.5">IPK {edu.gpa}</p>
+                          <p className="text-xs text-foreground font-semibold mt-1.5">IPK {edu.gpa}</p>
                         )}
                       </div>
                     </div>
@@ -148,7 +148,7 @@ export default function ExperienceSection() {
                           href={cert.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="shrink-0 text-muted-foreground hover:text-indigo-500 transition-colors"
+                          className="shrink-0 text-muted-foreground hover:text-foreground transition-colors"
                         >
                           <ExternalLink className="w-4 h-4" />
                         </a>
@@ -177,11 +177,11 @@ export default function ExperienceSection() {
               {experience.map((exp) => (
                 <div key={exp.id} className="timeline-item relative">
                   {/* Timeline dot */}
-                  <div className="timeline-dot absolute -left-6 top-1.5 w-4 h-4 rounded-full bg-card border-2 border-indigo-500 flex items-center justify-center will-change-transform">
-                    <div className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+                  <div className="timeline-dot absolute -left-6 top-1.5 w-4 h-4 rounded-full bg-card border-2 border-foreground flex items-center justify-center will-change-transform">
+                    <div className="w-1.5 h-1.5 rounded-full bg-foreground" />
                   </div>
 
-                  <div className="p-5 rounded-2xl bg-card border border-border hover:border-indigo-500/30 transition-colors duration-300">
+                  <div className="p-5 rounded-2xl bg-card border border-border hover:border-foreground/30 transition-colors duration-300">
                     {/* Header */}
                     <div className="flex items-start justify-between gap-3 mb-1">
                       <p className="font-bold text-foreground leading-snug">{exp.title}</p>
@@ -195,7 +195,7 @@ export default function ExperienceSection() {
                         );
                       })()}
                     </div>
-                    <p className="text-sm text-indigo-500 font-medium mb-1">{exp.company}</p>
+                    <p className="text-sm text-foreground font-medium mb-1">{exp.company}</p>
                     <p className="text-xs text-muted-foreground mb-3">{exp.period}</p>
 
                     {/* Description */}

@@ -74,12 +74,12 @@ export default function AboutStats() {
           <div className="flex items-baseline gap-0.5 tabular-nums">
             <span
               data-count={stat.value}
-              className="text-4xl font-bold tracking-tighter text-foreground transition-colors group-hover:text-indigo-500 duration-300"
+              className="text-4xl font-bold tracking-tighter text-foreground transition-colors group-hover:opacity-80 duration-300"
             >
               {stat.value}
             </span>
             {"suffix" in stat && (
-              <span className="text-2xl font-bold text-indigo-500">
+              <span className="text-2xl font-bold text-foreground">
                 {stat.suffix}
               </span>
             )}

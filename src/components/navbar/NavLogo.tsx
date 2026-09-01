@@ -7,8 +7,8 @@ export default function NavLogo() {
       className="flex items-center group transition-colors"
       aria-label="Dany Prasetyo Adji Home"
     >
-      <span className="font-bold text-base md:text-lg tracking-tight text-foreground group-hover:text-indigo-500 transition-colors">
-        Dany Prasetyo Adji<span className="text-indigo-500">.</span>
+      <span className="font-bold text-base md:text-lg tracking-tight text-foreground group-hover:opacity-80 transition-opacity">
+        Dany Prasetyo Adji<span>.</span>
       </span>
     </Link>
   );

@@ -7,12 +7,12 @@ export default function HeroPhoto() {
       {/* Photo */}
       <div className="relative w-56 h-72 md:w-64 md:h-80">
         {/* Glow ring (dark mode) */}
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-500/20 dark:from-indigo-500/30 dark:to-violet-500/30 blur-xl scale-110" />
+        <div className="absolute inset-0 rounded-2xl bg-white/5 dark:bg-white/10 blur-xl scale-110" />
 
         <div className="hero-photo-frame relative w-full h-full rounded-2xl overflow-hidden border border-border shadow-2xl bg-card">
           {/* Fallback gradient avatar (rendered behind the image) */}
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-violet-100 dark:from-indigo-950 dark:to-violet-950 flex items-center justify-center">
-            <span className="text-5xl font-bold text-indigo-500 opacity-60">DP</span>
+          <div className="absolute inset-0 bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center">
+            <span className="text-5xl font-bold text-foreground opacity-60">DP</span>
           </div>
 
           <Image

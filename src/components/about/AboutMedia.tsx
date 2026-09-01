@@ -5,8 +5,8 @@ export default function AboutMedia() {
   return (
     <div className="relative rounded-3xl overflow-hidden aspect-video group cursor-pointer shadow-lg border border-border">
       {/* Image */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-violet-100 dark:from-indigo-950 dark:to-violet-950 flex items-center justify-center">
-        <span className="text-6xl font-bold text-indigo-400/30">DP</span>
+      <div className="absolute inset-0 bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center">
+        <span className="text-6xl font-bold text-neutral-400/30">DP</span>
       </div>
       <Image
         src="/assets/about-photo.jpg"

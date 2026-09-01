@@ -50,8 +50,8 @@ export default function ContactSection() {
         />
 
         {/* Gradient orbs */}
-        <div className="cta-orb absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[120px] -mr-60 -mt-60 pointer-events-none will-change-transform" />
-        <div className="cta-orb absolute bottom-0 left-1/3 w-80 h-80 bg-violet-600/15 rounded-full blur-[100px] pointer-events-none will-change-transform" />
+        <div className="cta-orb absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] -mr-60 -mt-60 pointer-events-none will-change-transform" />
+        <div className="cta-orb absolute bottom-0 left-1/3 w-80 h-80 bg-white/5 rounded-full blur-[100px] pointer-events-none will-change-transform" />
 
         {/* Main content */}
         <div className="relative z-10 px-8 md:px-16 pt-14 pb-10">
@@ -67,10 +67,10 @@ export default function ContactSection() {
 
               <h2 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.05] mb-6">
                 <span className="mask-line">
-                  <span className="mask-line-inner">Hire Me &amp;</span>
+                  <span className="mask-line-inner text-white">Hire Me &amp;</span>
                 </span>
                 <span className="mask-line">
-                  <span className="mask-line-inner text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">
+                  <span className="mask-line-inner text-white/90">
                     Let&apos;s Build.
                   </span>
                 </span>
@@ -86,7 +86,7 @@ export default function ContactSection() {
             <div className="banner-fade flex flex-col gap-4 md:items-end">
               <a
                 href={`mailto:${personalInfo.contact.email}`}
-                className="group flex items-center gap-3 bg-white text-black font-bold text-sm px-7 py-4 rounded-full hover:bg-indigo-400 hover:text-white transition-all duration-300"
+                className="group flex items-center gap-3 bg-white text-black font-bold text-sm px-7 py-4 rounded-full hover:bg-neutral-200 transition-all duration-300"
               >
                 <Sparkles className="w-4 h-4" />
                 Kirim Email

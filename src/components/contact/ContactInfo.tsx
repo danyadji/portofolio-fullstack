@@ -71,8 +71,8 @@ export default function ContactInfo() {
       <div className="space-y-4">
         {contactItems.map((item) => (
           <div key={item.label} className="contact-row flex items-center gap-4 group">
-            <div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center flex-shrink-0 group-hover:bg-indigo-500/10 dark:group-hover:bg-indigo-500/20 transition-colors duration-300">
-              <item.icon className="w-4 h-4 text-muted-foreground group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors duration-300" />
+            <div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center flex-shrink-0 group-hover:bg-foreground/10 transition-colors duration-300">
+              <item.icon className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300" />
             </div>
             <div>
               <p className="text-xs text-muted-foreground font-medium">{item.label}</p>
@@ -81,7 +81,7 @@ export default function ContactInfo() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-medium text-foreground hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-200"
+                  className="text-sm font-medium text-foreground hover:opacity-80 transition-opacity duration-200"
                 >
                   {item.value}
                 </a>

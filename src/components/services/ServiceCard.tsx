@@ -40,10 +40,10 @@ export default function ServiceCard({ service }: { service: Service }) {
   }
 
   return (
-    <div className="bg-card rounded-3xl border border-border p-8 flex flex-col justify-between h-[260px] group hover:shadow-xl hover:border-indigo-500/30 hover:-translate-y-1 transition-all duration-300">
+    <div className="bg-card rounded-3xl border border-border p-8 flex flex-col justify-between h-[260px] group hover:shadow-xl hover:border-foreground/30 hover:-translate-y-1 transition-all duration-300">
       <div>
         {Icon && (
-          <Icon className="w-6 h-6 mb-4 text-muted-foreground group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors duration-300" />
+          <Icon className="w-6 h-6 mb-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300" />
         )}
         <h4 className="text-lg font-bold text-foreground mb-3">{service.title}</h4>
         <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>

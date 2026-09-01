@@ -7,8 +7,9 @@ import HeroCTA from "./HeroCTA";
 import { ChevronDown } from "lucide-react";
 import dynamic from "next/dynamic";
 
-// Lazy-load WebGL component to keep the initial page bundle light
+// Lazy-load WebGL / Canvas background components
 const LiquidEther = dynamic(() => import("@/components/LiquidEther"), { ssr: false });
+const DotField = dynamic(() => import("@/components/DotField"), { ssr: false });
 
 export default function HeroSection() {
   const heroRef = useGsapHeroEntrance();
@@ -23,12 +24,24 @@ export default function HeroSection() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/5 dark:bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-violet-500/5 dark:bg-violet-500/8 rounded-full blur-[100px] pointer-events-none" />
 
-      {/* Liquid Ether Animated Background (Optimized parameters) */}
-      <div className="hero-bg absolute inset-0 z-0 opacity-40 dark:opacity-60 pointer-events-none">
+      {/* Layer 1: Dot Field Background */}
+      <div className="absolute inset-0 z-0 opacity-80 pointer-events-none">
+        <DotField
+          dotColor="auto"
+          spacing={24}
+          dotSize={1.2}
+          waveSpeed={0.0012}
+          waveAmplitude={2.5}
+          mouseRadius={140}
+        />
+      </div>
+
+      {/* Layer 2: Liquid Ether Animated Background (Original Purple Palette) */}
+      <div className="hero-bg absolute inset-0 z-[1] opacity-70 dark:opacity-85 pointer-events-none">
         <LiquidEther 
           colors={["#5227FF", "#FF9FFC", "#B19EEF"]} 
-          resolution={0.3}       // Diturunkan dari 0.5 ke 0.3 untuk meringankan render GPU
-          iterationsPoisson={16}  // Diturunkan dari 32 ke 16 untuk memotong beban matematika kalkulasi shader
+          resolution={0.4}       // Ditingkatkan sedikit dari 0.3 ke 0.4 agar tampilan cairan lebih pekat/tajam
+          iterationsPoisson={20}
         />
       </div>
 

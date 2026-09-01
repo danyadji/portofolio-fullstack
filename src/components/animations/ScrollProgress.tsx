@@ -37,7 +37,7 @@ export default function ScrollProgress() {
     <div className="fixed top-0 left-0 right-0 h-[2px] z-[70] pointer-events-none">
       <div
         ref={barRef}
-        className="h-full w-full origin-left bg-gradient-to-r from-indigo-500 to-violet-500 scale-x-0"
+        className="h-full w-full origin-left bg-gradient-to-r from-neutral-400 to-white scale-x-0"
       />
     </div>
   );

@@ -23,7 +23,7 @@ export default function HeroCTA() {
       <Button
         onClick={() => scrollTo("#contact")}
         variant="outline"
-        className="group rounded-full px-7 py-2.5 font-semibold text-sm border-border hover:border-indigo-500 hover:text-indigo-500 dark:hover:border-indigo-400 dark:hover:text-indigo-400 hover:-translate-y-0.5 transition-all duration-300"
+        className="group rounded-full px-7 py-2.5 font-semibold text-sm border-border hover:border-foreground hover:text-foreground dark:hover:border-white dark:hover:text-white hover:-translate-y-0.5 transition-all duration-300"
       >
         <MessageCircle className="mr-2 w-4 h-4" />
         Hubungi Saya

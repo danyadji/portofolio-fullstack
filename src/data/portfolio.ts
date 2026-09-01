@@ -93,7 +93,8 @@ export const projects = [
     // === CARD (beranda) ===
     image: "/assets/projects/A8.png",
     tech: ["Laravel", "Tailwind", "MySQL", "Figma"],
-    demo: "#",         // ← ganti dengan URL demo asli
+    demo: "https://portalasetstmm.my.id/login",         // ← ganti dengan URL demo/website live asli
+    instagram: "#",    // ← ganti dengan URL Instagram postingan/akun project
     github: "#",       // ← ganti dengan URL GitHub asli
     featured: true,
   },
@@ -132,7 +133,8 @@ export const projects = [
     image: "/assets/projects/B6.png",
     tech: ["Next.JS", "React", "MySQL"],
     demo: "#",
-    github: "#",
+    instagram: "#",
+    github: "https://github.com/danyadji/Market-Intelligence-Competitor-Analysis-Dashboard",
     featured: false,
   },
   {
@@ -167,6 +169,7 @@ export const projects = [
     image: "/assets/projects/C5.png",
     tech: ["React", "Tailwind", "Framer Motion"],
     demo: "#",
+    instagram: "#",
     github: "#",
     featured: true,
   },
@@ -203,6 +206,7 @@ export const projects = [
     image: "/assets/projects/diamoraa.png",
     tech: ["Laravel", "React.js", "Tailwind CSS", "MySQL"],
     demo: "#",
+    instagram: "https://www.instagram.com/diamora.invitation?igsi=MXJvNHN2NnZneTN4",
     github: "#",
     featured: false,
   },
@@ -237,6 +241,7 @@ export const projects = [
     image: "/assets/projects/if/1.png",
     tech: ["Wordpres", "Woocomerce", "Midtrans", "Bitship"],
     demo: "#",
+    instagram: "https://www.instagram.com/inspiringfurni.id?igsi=Z3k0bHU3dnl5dWhq",
     github: "#",
     featured: false,
   },
@@ -271,6 +276,7 @@ export const projects = [
     image: "/assets/projects/woodelta/1.png",
     tech: ["Wordpres", "Woocomerce", "Midtrans", "Bitship"],
     demo: "#",
+    instagram: "https://www.instagram.com/woodelta.co?igsi=MXhmaGVhb2p6b2s3aQ==",
     github: "#",
     featured: false,
   },
@@ -303,6 +309,7 @@ export const projects = [
     image: "/assets/projects/blog.jpg",
     tech: ["Wordpres", "Woocomerce", "Midtrans", "Bitship"],
     demo: "#",
+    instagram: "https://www.instagram.com/meubel_jatiabror?igsi=aWU1NnJieHFpank3",
     github: "#",
     featured: false,
   },
@@ -338,7 +345,8 @@ export const projects = [
 
     image: "/assets/projects/G1.png",
     tech: ["Figma"],
-    demo: "#",
+    demo: "https://www.figma.com/design/LOv7raRfp5XGzMBlzJTi3A/Rosalia-Indah-Web-Travel.?node-id=0-1&t=PAp0WiTzy2K3Iyv1-1",
+    instagram: "#",
     github: "#",
     featured: false,
   },
@@ -374,7 +382,8 @@ export const projects = [
 
     image: "/assets/projects/J9.png",
     tech: ["Figma"],
-    demo: "#",
+    demo: "https://www.figma.com/design/1g81mCN3sCc7O3vHBfMaR9/IMK-OBELIX?node-id=0-1&t=5BmL9GU19QMvWXiP-1",
+    instagram: "#",
     github: "#",
     featured: false,
   },
@@ -410,7 +419,8 @@ export const projects = [
 
     image: "/assets/projects/J1.png",
     tech: ["Figma"],
-    demo: "#",
+    demo: "https://www.figma.com/design/4lasyX4pALoLni6uqTVysN/Netory-GMEDIA?node-id=0-1&t=1gYAhd7Vl91sWc1V-1",
+    instagram: "#",
     github: "#",
     featured: false,
   }

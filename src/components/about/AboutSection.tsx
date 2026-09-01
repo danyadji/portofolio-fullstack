@@ -28,7 +28,7 @@ export default function AboutSection() {
             {/* Info pills */}
             <div className="flex flex-wrap items-center gap-3 mt-8 about-fade">
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border text-sm text-muted-foreground">
-                <MapPin className="w-3.5 h-3.5 text-indigo-500" />
+                <MapPin className="w-3.5 h-3.5 text-foreground" />
                 <span>{personalInfo.location}</span>
               </div>
               {personalInfo.available && (

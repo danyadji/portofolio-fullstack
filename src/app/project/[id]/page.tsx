@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, GitBranch, CheckCircle2, Lightbulb, User } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/InstagramIcon";
 import { projects } from "@/data/portfolio";
 import { Badge } from "@/components/ui/badge";
 import Footer from "@/components/footer/Footer";
 import PageIntro from "@/components/animations/PageIntro";
+
+import { ensureAbsoluteUrl } from "@/lib/utils";
 
 export function generateStaticParams() {
   return projects.map((project) => ({
@@ -64,18 +67,29 @@ export default async function ProjectDetailPage({
             <div data-page="fade" className="flex flex-wrap gap-3">
               {project.demo && project.demo !== "#" && (
                 <a
-                  href={project.demo}
+                  href={ensureAbsoluteUrl(project.demo)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-indigo-600 text-white hover:bg-indigo-700 px-6 py-2.5 rounded-full text-sm font-semibold transition-colors"
+                  className="inline-flex items-center gap-2 bg-foreground text-background hover:opacity-90 px-6 py-2.5 rounded-full text-sm font-semibold transition-opacity"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  Lihat Demo
+                  Kunjungi Website / Demo
+                </a>
+              )}
+              {(project as any).instagram && (project as any).instagram !== "#" && (
+                <a
+                  href={ensureAbsoluteUrl((project as any).instagram)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 text-white hover:opacity-90 px-6 py-2.5 rounded-full text-sm font-semibold transition-opacity shadow-md"
+                >
+                  <InstagramIcon className="w-4 h-4" />
+                  Lihat di Instagram
                 </a>
               )}
               {project.github && project.github !== "#" && (
                 <a
-                  href={project.github}
+                  href={ensureAbsoluteUrl(project.github)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-card border border-border text-foreground hover:bg-secondary px-6 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm"
@@ -89,7 +103,7 @@ export default async function ProjectDetailPage({
 
           {/* ── MAIN IMAGE ── */}
           <div data-page="image" className="relative aspect-video w-full rounded-2xl md:rounded-3xl overflow-hidden border border-border shadow-2xl mb-14 bg-muted">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-violet-100 dark:from-indigo-950/50 dark:to-violet-950/50" />
+            <div className="absolute inset-0 bg-neutral-100 dark:bg-neutral-900" />
             <Image
               src={project.image}
               alt={project.title}
@@ -105,8 +119,8 @@ export default async function ProjectDetailPage({
             {/* Role Card */}
             {"role" in project && (
               <div className="md:col-span-3 flex items-start gap-4 p-6 rounded-2xl bg-card border border-border">
-                <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center">
-                  <User className="w-5 h-5 text-indigo-500" />
+                <div className="shrink-0 w-10 h-10 rounded-xl bg-secondary flex items-center justify-center">
+                  <User className="w-5 h-5 text-foreground" />
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Peran Saya</p>
@@ -136,7 +150,7 @@ export default async function ProjectDetailPage({
                     key={feature}
                     className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border"
                   >
-                    <CheckCircle2 className="w-4 h-4 text-indigo-500 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-foreground mt-0.5 shrink-0" />
                     <span className="text-sm text-foreground leading-relaxed">{feature}</span>
                   </li>
                 ))}

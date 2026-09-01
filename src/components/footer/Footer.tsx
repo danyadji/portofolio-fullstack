@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <span className="font-bold text-2xl tracking-tight text-white">
-                Dany Prasetyo Adji<span className="text-indigo-500">.</span>
+                Dany Prasetyo Adji<span>.</span>
               </span>
             </div>
             <p className="text-xs text-neutral-400 leading-relaxed max-w-[240px]">
@@ -26,7 +26,7 @@ export default function Footer() {
               <h5 className="text-neutral-500 uppercase tracking-widest font-bold mb-2">Email</h5>
               <a
                 href="mailto:danyadji90@gmail.com"
-                className="text-neutral-300 hover:text-indigo-400 transition-colors"
+                className="text-neutral-300 hover:text-white transition-colors"
               >
                 danyadji90@gmail.com
               </a>
