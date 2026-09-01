@@ -59,7 +59,7 @@ export default function ContactInfo() {
 
       {/* Download CV Button */}
       <a
-        href="/assets/cv-dany-prasetyo-adji.pdf"
+        href="/assets/cv-dany.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2.5 bg-foreground text-background hover:opacity-80 transition-opacity px-6 py-3 rounded-full text-sm font-semibold mb-10"
