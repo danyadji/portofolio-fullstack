@@ -59,7 +59,7 @@ export default function ContactForm() {
             <span className="text-sm text-muted-foreground font-medium">Domisili</span>
           </div>
           <span className="text-sm font-semibold text-foreground text-right">
-            Yogyakarta & Jepara
+            Jepara, Jawa Tengah
           </span>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
             <div>
               <h5 className="text-neutral-500 uppercase tracking-widest font-bold mb-2">Location</h5>
-              <p className="text-neutral-300">Yogyakarta, Indonesia</p>
+              <p className="text-neutral-300">Jepara, Jawa Tengah</p>
             </div>
           </div>
         </div>

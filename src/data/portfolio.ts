@@ -8,7 +8,7 @@ export const personalInfo = {
   tagline: "Merancang antarmuka yang intuitif & membangun web yang modern — dari desain UI/UX hingga e-commerce.",
   bio: "Saya adalah seorang Fresh Graduate yang memiliki antusiasme tinggi di dunia Web Development. Memiliki pondasi yang kuat dalam React, Next.js, dan Laravel dari berbagai project studi dan eksplorasi pribadi. Saya selalu haus akan ilmu baru, terbiasa belajar dengan cepat, dan sangat bersemangat untuk memulai karir profesional serta berkontribusi nyata dalam tim.",
   photo: "/assets/projects/dany.jpeg", // ganti dengan foto asli
-  location: "Yogyakarta, Indonesia",
+  location: "Jepara, Jawa Tengah",
   available: true,
   contact: {
     email: "danyadji90@gmail.com",         // ganti dengan email asli
